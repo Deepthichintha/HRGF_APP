@@ -1,12 +1,6 @@
-Below is a **complete, clean, interview-ready `README.md` document** that you can **directly copy-paste** into your GitHub repository root.
-It is written exactly as expected for a **DevOps take-home assignment** and **real-world production repo**.
+# Automated Kubernetes Deployment with GitHub Actions
 
----
-
-```md
-# 🚀 Automated Kubernetes Deployment with GitHub Actions
-
-## 📌 Overview
+## Overview
 This repository demonstrates an end-to-end **CI/CD pipeline** for deploying a simple **Hello World web application** to a **Kubernetes cluster** using modern DevOps practices.
 
 The solution covers:
@@ -20,7 +14,7 @@ The solution covers:
 
 ---
 
-## 🏗 Architecture
+## Architecture
 
 ```
 
@@ -42,7 +36,7 @@ Kubernetes Cluster
 
 ---
 
-## 🧰 Tools & Technologies Used
+## Tools & Technologies Used
 
 | Tool | Purpose |
 |-----|--------|
@@ -57,7 +51,7 @@ Kubernetes Cluster
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 
@@ -83,7 +77,7 @@ Kubernetes Cluster
 
 ---
 
-## 🐳 Docker Image
+## Docker Image
 
 - Uses **nginx:alpine** for minimal image size
 - Static HTML application
@@ -96,11 +90,11 @@ docker build -t hello-app .
 
 ---
 
-## ☸ Kubernetes Deployment
+## Kubernetes Deployment
 
 Two deployment approaches are provided:
 
-### 1️⃣ Raw Kubernetes Manifests
+### Raw Kubernetes Manifests
 
 Located in:
 
@@ -121,7 +115,7 @@ kubectl apply -f k8s/
 
 ---
 
-### 2️⃣ Helm Chart (Recommended)
+### Helm Chart (Recommended)
 
 Located in:
 
@@ -137,7 +131,7 @@ helm upgrade --install hello-app helm/hello-app
 
 ---
 
-## 🔐 Secrets Management
+## Secrets Management
 
 The following secrets are stored securely in **GitHub Secrets**:
 
@@ -155,7 +149,7 @@ base64 ~/.kube/config
 
 ---
 
-## 🔍 Security – Trivy Image Scan
+## Security – Trivy Image Scan
 
 Trivy scans the Docker image for vulnerabilities during the CI pipeline.
 
@@ -164,7 +158,7 @@ Trivy scans the Docker image for vulnerabilities during the CI pipeline.
 
 ---
 
-## 📊 Observability – Prometheus & Grafana
+## Observability – Prometheus & Grafana
 
 Monitoring stack installed using Helm:
 
@@ -182,7 +176,7 @@ kubectl port-forward svc/monitoring-grafana 3000:80
 
 ---
 
-## 🔄 CI/CD Pipeline (GitHub Actions)
+## CI/CD Pipeline (GitHub Actions)
 
 Pipeline triggers automatically on:
 
@@ -204,7 +198,7 @@ Workflow file:
 
 ---
 
-## 🌍 Application Access
+## Application Access
 
 Once deployed, access the application using the **LoadBalancer external IP**:
 
