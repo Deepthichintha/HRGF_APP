@@ -193,7 +193,7 @@ Pipeline stages:
 Workflow file:
 
 ```
-.github/workflows/deploy.yml
+.github/workflows/deploy.yaml
 ```
 
 ---
