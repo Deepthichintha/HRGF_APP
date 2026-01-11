@@ -1,7 +1,7 @@
 replicaCount: 2
 
 image:
-  repository: YOUR_REGISTRY/hello-app
+  repository: deepthi2911/hrgf-task:latest
   tag: latest
 
 service:
